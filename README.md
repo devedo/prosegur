@@ -1,7 +1,7 @@
 Parte 1
 
 Solución consiste en crear camino empezando por la 1ra fila,  
-y ir girando a la derecha(abajo por la columna) o a la iz. (arriba) 
+e ir girando a la derecha(abajo por la columna) o a la iz. (arriba) 
   
 Antes de girar se hace producto con los valores que ha ido encontrando 
 en la fila, luego se hace producto con los valores que hay en la dirección 
@@ -51,6 +51,7 @@ Tecnologías a utilizar:
 		• Jenkins
 	•Git
     
+    
     • General
 Basandome en mi experiencia en Framework de Spring, optaría a utilizarlo como herramienta base para el desarrollo de backend. 
 
@@ -58,12 +59,14 @@ La parte front la realizaría en Angular, que en este caso estaría integrarla a
 Mediante Maven y sus plugins, modular el proyecto front con la parte back. Cada modulo con su .pom correspondiente y un .pom padre. Al hacer build de back, se copiaría el contenido del directorio de “dist” de angular con las fuentes.
 Con Maven también para gestionaria las dependencias, chequeo de tests, y creación del ejecutable. 
 
-Back sería una aplicación con las siguientes capas:  Controlador, Servicio, Modelo, Repositorio,Seguridad.
-    • Los controladores serian Rest. 
-    • Los servicios seguirían el patrón DTO respecto al modelo de datos obtenidos desde los repositorios. 
-    • Los repositorios seguirían el patrón DAO, y no consultarían los datos a DDBB si no que al servicio de Facturador. 
-    • Seguridad por medio de SpringSegurity, a la hora de autentificación desde la web, que se haría según el sistema que esté implementado por la empresa o hacer una propia como token o por BBDD. 
+Back sería una aplicación con las siguientes capas:
+Controlador, Servicio, Modelo, Repositorio,Seguridad.
 
+	• Los controladores serian Rest. 
+	• Los servicios seguirían el patrón DTO respecto al modelo de datos obtenidos desde los repositorios. 
+	• Los repositorios seguirían el patrón DAO, y no consultarían los datos a DDBB si no que al servicio de Facturador. 
+	• Seguridad por medio de SpringSegurity, a la hora de autentificación desde la web, que se haría según el sistema que esté implementado por la empresa o hacer una propia como token o por BBDD. 
+   
 Desconozco el método de comunicación con el servicio Facturador, en el caso de que sea una interfaz REST, Spring dispone RestTemplate mediante el cual permitiría hacer cualquier tipo de petición hacia este servicio. 
 
 No tengo mucha experiencia con la interfaz SOAP, pero Spring dispone de librería JAXB que permite trabajar con ficheros XML, y libreria WS que permitiría la comunicación con el servicio CRM, para hacer cualquier tipo de peticiones. 

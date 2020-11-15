@@ -47,5 +47,5 @@ La parte web creada con jsp en algún proyecto anterior, yo había testeado con 
 Conozco Jmeter como una aplicación stress test, pero en el proyecto que estuve no estaba implementada, lo único que puede hacer antes de que me cambiaran de proyecto, era integrar el fichero de configuración de Jmeter al git y que cada usuario lo ejecutara en su maquina local.   
 
 En caso de que en la política de empresa exista cobertura de pruebas de código, incluir Jacoco. Aunque solo he tenido experiencia con ello unos meses.
-    • Despliegue
+    • Despliegue 
 Para el desarrollo, una vez echo el build , obtendría el war del proyecto, buscaría una imagen con WebLogic en Docker, lo arrancaría y desplegaría el war generado. O creando un pipeline de Jenkins para que lo haga una ve echo el commit en rama.

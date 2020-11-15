@@ -1,7 +1,7 @@
 Parte 1
 
 Solución consiste en crear camino empezando por la 1ra fila,  
-y ir girando a la derecha(abajo por la columna) o a la iz. (arriba) 
+e ir girando a la derecha(abajo por la columna) o a la iz. (arriba) 
   
 Antes de girar se hace producto con los valores que ha ido encontrando 
 en la fila, luego se hace producto con los valores que hay en la dirección 

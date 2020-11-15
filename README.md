@@ -1,3 +1,35 @@
+Parte 1
+
+Solución consiste en crear camino empezando por la 1ra fila,  
+y ir girando a la derecha(abajo por la columna) o a la iz. (arriba) 
+  
+Antes de girar se hace producto con los valores que ha ido encontrando 
+en la fila, luego se hace producto con los valores que hay en la dirección 
+en la que ha girado, y seguidamente hace el total, obtiene los ceros y los 
+comprueba con el numero existente hasta hora y lo guarda o no. 
+  
+Se contempla el caso de que puede se inicializado en cualquier lugar del array
+con las variables startJ y startI. En este caso al llegar al final, 
+tendrá que dar otra vuelta desde el cero hasta los valores indicados
+    
+Al finalizar, se comprueba tambien desde el final hasta el inicio 
+
+  Doy por echo que el array viene inicializado con más de 1 fila y mas de 1 col.
+   
+   
+   Ejemplo:
+   
+ 	|_0_|_1_|_2_|
+ 	0|   | * |   |
+ 	1|   | * |   |
+  	2|****** |   |  -> empieza por la fila 2, primero gira abajo hace calculo y
+  	3|   | * |   | 		luego gira arriba y hace calculo	
+  	4|   | * |   |
+ 	
+
+Parte 2
+
+
 Tecnologías a utilizar: 
 
 	• Back		

@@ -34,7 +34,6 @@ public class Solucion {
 		for (int i = startI; !finI && (i < LIMITE_I) ; ) {	//Index Filas
 			
 			for (int j = startJ; (j <MAXJ) ; j++) {			//Index Column
-				print("");
 				reset();
 				for (int jCamino = 0;j>0 && jCamino <=j ; jCamino++) //Camino
 					caminos(i, jCamino,j);
@@ -56,11 +55,9 @@ public class Solucion {
 			
 		}//positivo
 		
-		print("----");
 		for (int i = MAXI-1; i >= 0 ; i--) {//Index filas
 			
 			for (int j = MAXJ-1; j>=0; j--) {//Index Column
-				print("");
 				reset();
 				for (int jCamino = MAXJ-1; j< MAXJ-1 && jCamino >= j ; jCamino--) //Camino
 					caminos(i, jCamino,j);
@@ -69,32 +66,26 @@ public class Solucion {
 			
 		}//negativo
 		
-		print("NUMERO: "+producto);
-		print("NUMERO_CEROS: "+productoCeros);
-		
 		return productoCeros;
 		
 	}
 	
 	private  void caminos(int i,int jCamino,int j) {
-		print(i, jCamino);
 		mult(i, jCamino);
 		if(jCamino==j) {
 			//giro der
 			if(i<MAXI-1) {
-				for (int ii = i+1; ii <MAXI ; ii++) {//Columnas
-					print(ii, jCamino);
+				for (int ii = i+1; ii <MAXI ; ii++) //Columnas
 					multTemp(ii, jCamino);
-				}
+				
 				mult();
 				resetTemp();
 			}
 			//giro iz
 			if(i>0) {
-				for (int ii = i-1; ii >=0 ; ii--) {//Columnas
-					print(ii, jCamino);
+				for (int ii = i-1; ii >=0 ; ii--) //Columnas
 					multTemp(ii, jCamino);
-				}
+				
 				mult();
 				resetTemp();
 			}
@@ -106,18 +97,14 @@ public class Solucion {
 	private  void reset() {
 		prod=1;
 		prodTem=1;
-		print("reset");
 	}
 	private  void resetTemp() {
 		prodTem=1;
 	}
 	private  void multTemp(int i,int j) {	
-		String s="a["+i+"]["+j+"]*"+prodTem;
 		prodTem=a[i][j]*prodTem;
-		print("multTemp:"+s+"="+prodTem);
 	}
 	private  void mult() {		
-		print("PRODUCTO:"+prod*prodTem);
 		int ceros=ceroCunt(prod*prodTem);
 		if(ceros>productoCeros) {
 			productoCeros=ceros;
@@ -125,9 +112,7 @@ public class Solucion {
 		}
 	}
 	private  void mult(int i,int j) {
-		String s="a["+i+"]["+j+"]*"+prod;
 		prod=a[i][j]*prod;
-		print("mult:"+s+"="+prod);
 	}
 	private  int  ceroCunt(int n) {
 		int c = 0;
@@ -136,12 +121,6 @@ public class Solucion {
 		    n/=10;
 		}
 		return c;
-	}
-	private  void print(int i,int j) {
-		System.out.println(">a["+i+"]["+j+"]"+a[i][j]);
-	}
-	private  void print(Object ob) {
-		System.out.println(ob.toString());
 	}
 	
 	public static void main(String[] args) {

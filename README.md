@@ -1,22 +1,23 @@
 Tecnologías a utilizar: 
-	Back			
-		SpringBoot
-		SpringSecurity
-		Maven
-		Swagger
-	Front
-		Angular
-	Test
-		Junit
-		Mockito
-		Selenium
-		Cucumber
-		Jmeter
-		JaCoCo
-	Deployment
-		Docker(OpenShift)
-		Jenkins
-	Git
+
+	• Back		
+	    	• SpringBoot
+		• SpringSecurity
+		• Maven
+		• Swagger
+	• Front
+		• Angular
+	• Test
+		• Junit
+		• Mockito
+		• Selenium
+		• Cucumber
+		• Jmeter
+		• JaCoCo
+	• Deployment
+		• Docker(OpenShift)
+		• Jenkins
+	•Git
     
     • General
 Basandome en mi experiencia en Framework de Spring, optaría a utilizarlo como herramienta base para el desarrollo de backend. 

@@ -8,7 +8,7 @@ en la fila, luego se hace producto con los valores que hay en la dirección
 en la que ha girado, y seguidamente hace el total, obtiene los ceros y los 
 comprueba con el numero existente hasta hora y lo guarda o no. 
   
-Se contempla el caso de que puede se inicializado en cualquier lugar del array
+Se contempla el caso de que puede ser inicializado en cualquier lugar del array
 con las variables startJ y startI. En este caso al llegar al final, 
 tendrá que dar otra vuelta desde el cero hasta los valores indicados
     
@@ -52,7 +52,7 @@ Tecnologías a utilizar:
 	•Git
     
     
-    • General
+    
 Basandome en mi experiencia en Framework de Spring, optaría a utilizarlo como herramienta base para el desarrollo de backend. 
 
 La parte front la realizaría en Angular, que en este caso estaría integrarla al mismo proyecto back, como contenido estático, para que sea accesible desde el mismo WebLogic.
